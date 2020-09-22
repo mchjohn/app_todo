@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #58ACFA;
+}
+
+/* menu hamburger */
+.menu-container {
+  display: flex;
+}
+
+.menu {
+  margin: 10px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #E0ECF8;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.d-none {
+  background: transparent;
+}
+
+.rotate {
+  transform: rotateZ(399deg) scaleX(1.2) translate(5px, 8px);
+}
+
+.rotate2 {
+  transform: rotateZ(-399deg) scaleX(1.2) translate(3px, -5px);
+}
+/* menu hamburger */
+
+.dateH1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Todo */
+.container-todo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.header-todo {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 auto;
+  background-color: #5882FA;
+  padding: 5px;
+  z-index: 1;
+}
+
+.header-todo h1 {
+  font-size: 1em;
+  color: #E0ECF8;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.btn-add {
+  padding: 3px;
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #E0ECF8;
+  border: none;
+  cursor: pointer;
+  background-color: #5882FA;
+  align-self: center;
+  margin-right: 5px;
+  
+}
+
+.btn-add:hover {
+  transition: all 0.3s;
+}
+
+.btn-add:active {
+  transition: all 0.1s;
+  /* transform: translateY(1px); */
+  text-shadow:  0 0 8px rgba(0, 0, 0, 0.541), 0 0 20px rgb(97, 151, 250);
+}
+
+.todo-list {
+  width: 240px;
+  min-height: 40px;
+  margin: -40px auto 0 auto;
+  background-color: #E0ECF8;
+  z-index: 1;
+}
+
+.todo-list ul {
+  color: #333;
+  list-style: none;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+ul li {
+  padding: 3px;
+}
+
+/* aplicado pelo JS */
+.done {
+  text-decoration: line-through;
+  color: rgb(128, 128, 128);
+  transition: all 0.3s;
+}
+/* aplicado pelo JS */
+
+input[type='checkbox'] {
+  padding: 3px;
+  margin: 0 5px;
+  float: right;
+  
+}
+/* Todo */
+
+/* add tarefa */
+.container-include-todo {
+  display: flex;
+  margin: 0 auto;
+  width: 240px;
+  height: 40px;
+  box-shadow: 2px 3px 5px 0 #58ACFA;
+  z-index: 0;
+}
+
+input[type='text'] {
+  width: 100%;
+  border: none;
+  font-size: 0.9em;
+  padding: 5px;
+  color: #333;
+  font-weight: 500;
+  
+}
+
+input[type='text']:hover {
+  color: #151515;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.include-todo {
+  padding: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #5882FA;
+  border: none;
+  cursor: pointer;
+}
+
+.include-todo:hover {
+  transition: all 0.2s;
+  color: #5883faa2;
+}
+
+.include-todo:active {
+  transition: all 0.5s;
+  color: green;
+  text-shadow:  0 0 8px rgb(0, 255, 76), 0 0 20px rgb(0, 255, 34);
+}
+
+/* aplicado pelo JS */
+.d-block {
+ z-index: 3;
+}
+
+.close-todo {
+ color: #FF8000;
+ transform: rotateZ(45deg);
+}
+
+#required {
+  text-align: center;
+  margin: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #2E2E2E;
+  display: none;
+}
+/* aplicado pelo JS */
